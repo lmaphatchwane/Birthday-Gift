@@ -1,0 +1,83 @@
+.happy-monkey-regular {
+  font-family: "Happy Monkey", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #a2d2ff; /* Sets the page background to a light blue */
+  text-align: center; /* Centers text horizontally inside the body */
+  padding: 50px; /* Adds 50px of inner space around the page content */
+  font-family: "Happy Monkey", system-ui; /* Sets the font, using 'Happy Monkey' or the system's default */
+  color: #ffffff; /* Makes the default text colour white */
+  display: flex; /* Turns the body into a flexbox container */
+  flex-direction: column; /* Stacks the main body elements vertically */
+  align-items: center; /* Centers all flex items horizontally */
+}
+
+h1, h2, h3, h4, p {
+   /* Adds a subtle black outline/glow to make text more readable against backgrounds */
+   text-shadow: 0px 0px 1px #000000;
+}
+
+#bff-img {
+  width: 300px; /* Fixes the image width to 300px */
+  height: auto; /* Keeps the aspect ratio so the image doesn't look stretched */
+  border-radius: 50%; /* Makes the image a perfect circle */
+  border: #ef80c9 6px solid; /* Adds a thick pink border around the circle */
+  margin: 20px 0; /* Adds 20px of space above and below the image */
+}
+
+#bday-age  {
+  background: #efb0c9; /* Gives the element a light pink background */
+  padding: 5px 10px; /* Adds 5px space top/bottom and 10px left/right inside the box */
+  border-radius: 5px; /* Softens the corners of the background box */
+  margin: 5px 0 10px 0; /* Spacing: 5px top, 0 sides, 10px bottom */
+}
+
+#bday-date {
+  background: #efb0c9; /* Matches the background colour of the age section */
+  padding: 5px 10px; /* Consistent internal spacing */
+  border-radius: 5px; /* Consistent rounded corners */
+  margin-top: 0px; /* Removes any extra space above this element */
+}
+
+#header {
+  display: flex; /* Makes the header a flex container */
+  flex-direction: column; /* Stacks header elements (like text) vertically */
+  align-items: center; /* Centers header elements horizontally */
+}
+
+.gift-section {
+ margin-top: 50px; /* Adds a large 50px gap above the gift section to separate it */
+}
+
+.gift-title {
+  margin-bottom: 10px; /* Adds a small gap below the title */
+}
+
+.gift-hint {
+  margin-bottom: 10px; /* Adds a small gap below the hint text */
+}
+
+.gift-img {
+  width: 400px; /* Fixes the width of the gift box */
+  height: 400px; /* Fixes the height to create a perfect square */
+  border: #ffffff 6px solid; /* Adds a thick white border */
+  border-radius: 10px; /* Slightly rounds the corners of the square */
+  background-image: url("img/Gift.jpg"); /* Loads the gift image into the box */
+  background-size: cover; /* Ensures the image fills the 400x400 area without gaps */
+  margin: 0 auto; /* Centers the image box horizontally */
+
+
+/* NEW: Smooths the transition so the hover effect isn't jumpy */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* Shows a hand icon so users know they can interact with it */
+}
+
+/* NEW: This effect happens when the mouse is over the image */
+.gift-img:hover {
+  transform: scale(1.05); /* Scales the image up by 5% */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Adds a shadow to make it look like it's lifting */
+  background-image: url("img/Dancing.gif"); /* Changes the background to a dancing gif when hovering over links */
+}
